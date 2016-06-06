@@ -129,7 +129,7 @@ local function disable_plugin_on_chat(receiver, plugin)
   _config.disabled_plugin_on_chat[receiver][plugin] = true
 
   save_config()
-  return 'Plugin '..plugin..' disabled on this chat'
+  return 'P'..plugin..' disabled on this chat'
 end
 
 local function reenable_plugin_on_chat(receiver, plugin)
@@ -152,7 +152,7 @@ end
 
 local function run(msg, matches)
   -- Show the available plugins 
-  if matches[1] == 'پلاگین' and is_sudo(msg) then --after changed to moderator mode, set only sudo
+  if matches[1] == 'p' and is_sudo(msg) then --after changed to moderator mode, set only sudo
     return list_all_plugins()
   end
 
@@ -181,7 +181,7 @@ local function run(msg, matches)
 
   -- Disable a plugin
   if matches[1] == '-' and is_sudo(msg) then --after changed to moderator mode, set only sudo
-    if matches[2] == 'پلاگین' then
+    if matches[2] == 'p' then
      return 'This plugin can\'t be disabled'
     end
     print("disable: "..matches[2])
@@ -204,10 +204,10 @@ return {
           "!plugins ? : reloads all plugins." },
           },
   patterns = {
-    "^پلاگین$",
-    "^!plugins? (+) ([%w_%.%-]+)$",
-    "^!plugins? (-) ([%w_%.%-]+)$",
-    "^!plugins? (?)$" },
+    "^[Pp]$",
+    "^[Pp]? (+) ([%w_%.%-]+)$",
+    "^[Pp]? (-) ([%w_%.%-]+)$",
+    "^[Pp]? (?)$" },
   run = run,
   moderated = true, -- set to moderator mode
   --privileged = true
