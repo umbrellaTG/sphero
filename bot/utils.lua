@@ -959,7 +959,7 @@ function get_receiver_api(msg)
   end 
 end 
 function send_api_msg(msg, receiver, text, disable_web_page_preview, markdown) 
-  local api_key = '' --put your api token here
+  local api_key = '221535494:AAEdEc04-dW4gPHmw4hy1lCayQnq1SddE7k' --put your api token here
   local url_api = 'https://api.telegram.org/bot'..api_key 
       ..'/sendMessage?chat_id='..receiver..'&text='..URL.escape(text) 
   if disable_web_page_preview == true then 
