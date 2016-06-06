@@ -1,15 +1,16 @@
 do
 
 function run(msg, matches)
-  local text = [[ [SpheroBoT](http://telegram.me/sphero)
+  local text = [[ [extreme](http://telegram.me/USdev)
   
-*Version: 2.2*
+*Version: 1.2*
   
 _more information send 
-!spherobot 
+!extreme
 to chat_
-[Developer](http://telegram.me/mrblacklife)
-[Channel](http://telegram.me/spheroch)
+[Developer](http://telegram.me/Iiborn)
+[sudo](http://telegram.me/axons)
+[Channel](http://telegram.me/extremech)
 *TNX to all*]]
 send_api_msg(msg, get_receiver_api(msg), text, true, 'md')
 end
