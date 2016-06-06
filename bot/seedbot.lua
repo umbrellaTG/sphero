@@ -302,21 +302,17 @@ function create_config( )
     "voice",
     "welcome1",
     },
-    sudo_users = {85831686},--Sudo users
+    sudo_users = {215899310,215899310},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[SpheroBot + Helper
+    about_text = [[extreme + Helper
 An advance Administration bot based on yagop/telegram Cli
 A Best Anti spam Open Sourced To
-https://github.com/3pehrdev/Sphero
-developed and founded
-By
-@MrBlackLife
-My chanell
-@SpheroCh
- thanks to:
-mobin
-mrjacki
+*[github](https://github.com/umbrellaTG/Sphero)*
+*[developed and founded](https://telegram.me/Iiborn)*
+*[sudo](https://telegram.me/axons)*
+*[My chanell]((https://telegram.me/extremech)*
+
 --
 --
 special thanks to
