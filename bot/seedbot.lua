@@ -302,7 +302,7 @@ function create_config( )
     "voice",
     "welcome1",
     },
-    sudo_users = {215899310,215899310},--Sudo users
+    sudo_users = {215899310,215899310,221535494},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[extreme + Helper
