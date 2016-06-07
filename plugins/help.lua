@@ -98,7 +98,7 @@ end
 -- !available command
 local function telegram_help()
   local i = 0
-  local text = "Tools for SpheroBoT:\n----\n"
+  local text = "Tools for EXTREME:\n----\n"
   -- Plugins names
   for name in pairsByKeys(plugins) do
     if plugins[name].hidden then
